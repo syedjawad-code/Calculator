@@ -4,7 +4,7 @@ import re
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="Calculator", page_icon=":abacus:", layout="centered")
+st.set_page_config(page_title="Jawad Calculator", page_icon=":abacus:", layout="centered")
 
 
 if "expr" not in st.session_state:
@@ -77,7 +77,7 @@ def evaluate_expression() -> None:
     st.session_state.just_evaluated = True
 
 
-st.title("Calculator")
+st.title("Jawad Calculator")
 st.caption("Use buttons or keyboard. Press Enter for result.")
 
 input_value = st.text_input(
